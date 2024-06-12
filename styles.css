@@ -1,0 +1,354 @@
+@media only screen and (min-width: 1200px){
+    .info-container{
+        height: 400px;
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+            margin-top: -200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .info-container{
+        height: 400px;
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+            margin-top: -200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 875px){
+    .info-container{
+        height: 400px;
+        h2{
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
+            margin-top: -200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 735px){
+    .info-container{
+        height: 300px;
+        h2{
+            font-size: 15px;
+        }
+        p{
+            font-size: 15px;
+            margin-top: -150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 555px){
+    .header{
+        h1{
+            font-size: 25px;
+        }
+    }
+    .info-container{
+        height: 250px;
+        h2{
+            font-size: 10px;
+        }
+        p{
+            font-size: 10px;
+            margin-top: -100px;
+        }
+    }
+}
+
+@media only screen and (max-width: 445px){
+    .header{
+        h1{
+            font-size: 25px;
+        }
+    }
+    .info-container{
+        height: 250px;
+        h2{
+            font-size: 8px;
+        }
+        p{
+            font-size: 10px;
+            margin-top: -100px;
+        }
+    }
+    .footer{
+        h2{
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .header{
+        h1{
+            font-size: 20px;
+        }
+    }
+    .info-container{
+        height: 200px;
+        h2{
+            font-size: 7px;
+        }
+        p{
+            font-size: 9px;
+            margin-top: -100px;
+        }
+    }
+    .footer{
+        h2{
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 315px){
+    .header{
+        h1{
+            font-size: 15px;
+        }
+    }
+    .info-container{
+        height: 150px;
+        h2{
+            justify-content: right;
+            font-size: 6px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 8px;
+            margin-top: -65px;
+        }
+    }
+    .footer{
+        height: 200px;
+        h2{
+            font-size: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 275px){
+    .header{
+        h1{
+            font-size: 15px;
+        }
+    }
+    .info-container{
+        height: 150px;
+        h2{
+            justify-content: right;
+            font-size: 6px;
+            margin-top: 20px;
+        }
+        p{
+            font-size: 8px;
+            margin-top: -65px;
+        }
+    }
+    .footer{
+        height: 100px;
+        h2{
+            font-size: 10px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(5, 25, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(5, 25, 0);
+    border: 1px solid green;
+    margin-left: 0.25%;
+    transition: 250ms;
+}
+
+.header:hover{
+    border-bottom: 1px solid lime;
+    box-shadow: 0px 0px 10px lime;
+    transition: 250ms;
+    h1{
+        color: lime;
+    }
+}
+
+.header h1{
+    color: green;
+    transition: 250ms;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 505px;
+}
+
+#info-grabber{
+    display: flex;
+    padding: 5px;
+    background-color: rgb(5, 25, 0);
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 15px;
+    color: lime;
+    text-align: center;
+    transition: 250ms;
+}
+
+button{
+    display: flex;
+    padding: 5px;
+    background-color: rgb(5, 25, 0);
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 15px;
+    color: green;
+    text-align: center;
+    transition: 250ms;
+}
+
+button:hover{
+    cursor: pointer;
+    color: lime;
+    border: 1px solid lime;
+    background-color: green;
+    transition: 0ms;
+}
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 100%;
+    border: 1px solid green;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 10px 10px green;
+    margin-left: 30%;
+    margin-right: 30%;
+    animation: flutuar 5s infinite normal;
+    transition: 250ms;
+}
+
+.info-container:hover{
+    background-color: green;
+    border: 1px solid lime;
+    box-shadow: 10px 10px lime;
+    animation: none;
+    transition: 0ms;
+    pre, h2, p{
+        color: lime;
+        animation: none;
+        transition: 0ms;
+    }
+}
+
+.info-container h2{
+    display: flex;
+    flex: 100%;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    text-transform: uppercase;
+    animation: brilhar 5s infinite normal;
+    transition: 250ms;
+}
+
+.info-container p{
+    display: flex;
+    text-align: center;
+    color: green;
+    transition: 250ms;
+}
+
+#description{
+
+}
+
+.footer{
+    margin-top: 20px;
+    padding: 5%;
+    margin-left: 0.25%;
+    border: 1px solid green;
+}
+
+.footer h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+}
+
+.footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: green;
+}
+
+#tecnologys{
+    color: lime;
+    font-weight: bold;
+}
+
+@keyframes flutuar{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+        border: 1px solid lime;
+        box-shadow: 10px 10px lime;
+    }
+    100%{
+        transform: translateY(0);
+        border: 1px solid green;
+        box-shadow: 10px 10px green;
+    }
+}
+
+@keyframes brilhar{
+    0%{
+        color: green;
+    }
+    50%{
+        color: lime;
+    }
+    100%{
+        color: green;
+    }
+}
